@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../components//icons/LinkedIn.astro';
+import GitHubIcon from '../components//icons/GitHub.astro';
+import GmailIcon from '../components//icons/Gmail.astro';
+import SocialPill from '../components/SocialPill.astro';
+
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<section class="w-full mx-auto lg:w-[740px] py-44">
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+				Hola, Soy Juan Camilo<a href="//www.linkedin.com/in/juan-camilo-alvarez-0aa699251/" 
+				target="_blank" 
+				rel="noopener"
+				class="flex justify-center items-center">
+				<Badge>Disponible para trabajar</Badge>
+				</a>		
+			</h1>
+
+			<h2 class="text-2xl opacity-80 text-wrap">
+			<span class="text-yellow-200/90"/> Desarrollador Frontend/Backend y Diseñador Web, Colombia 🇨🇴
+			</h2>
+			<nav class="flex gap-x-2">
+					<SocialPill href="//www.linkedin.com/in/juan-camilo-alvarez-0aa699251/">
+						<LinkedInIcon class="w-6 h-6"/>
+						LinkedIn
+					</SocialPill>
+					<SocialPill href="https://github.com/juanito06">
+						<GitHubIcon class="w-6 h-6"/>
+						GitHub
+					</SocialPill>
+					<SocialPill href="mailto:juan.vasquez@utp.edu.co">
+						<GmailIcon class="w-6 h-6"/>
+						Gmail
+					</SocialPill>
+			</nav>
+
+		</section>
+	</main>
+</Layout>
+
+
+
